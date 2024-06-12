@@ -1,0 +1,15 @@
+ void insertAtIndex(int arr[], int sizeOfArray, int index, int element)
+    {
+        if(index<0||index>sizeOfArray-1)
+        {
+            printf("index is out of bounds");
+            
+        }
+        for(int i=sizeOfArray-1;i>index;i--)
+        {
+            arr[i]=arr[i-1];
+        }
+        //Your code here
+        arr[index]=element;
+        
+    }
